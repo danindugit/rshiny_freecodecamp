@@ -51,8 +51,9 @@ server <- function(input, output) {
     x    <- na.omit(x)
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
-    hist(x, breaks = bins, col = "#75AADB", border = "black",
-         xlab = "Ozone!",
+    hist(x, breaks = bins, col = "red", border = "black",
+         xlab = "Ozone Level",
+         ylab = "FREQUENCY",
          main = "Histogram of Ozone level")
     
   })
