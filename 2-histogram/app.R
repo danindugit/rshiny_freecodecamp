@@ -13,7 +13,7 @@ data(airquality)
 ui <- fluidPage(
   
   # App title ----
-  titlePanel("Ozone level!"),
+  titlePanel("Ozone!"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
