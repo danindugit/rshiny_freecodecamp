@@ -24,9 +24,10 @@ ui <- fluidPage(
       # Input: Slider for the number of bins ----
       sliderInput(inputId = "bins",
                   label = "Number of bins:",
-                  min = 1,
-                  max = 50,
-                  value = 30)
+                  min = 0,
+                  max = 60,
+                  value = 20,
+                  step = 2)
       
     ),
     
@@ -51,7 +52,7 @@ server <- function(input, output) {
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     hist(x, breaks = bins, col = "#75AADB", border = "black",
-         xlab = "Ozone level",
+         xlab = "Ozone!",
          main = "Histogram of Ozone level")
     
   })
